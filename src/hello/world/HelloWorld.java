@@ -15,14 +15,18 @@ public class HelloWorld {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        String input = UserInput.getUserInput();
-        if(input.matches("HelloWorld")){
-            System.out.println("It matches :D");
+
+        String input = "";
+        while(input != "end") {
+            input = UserInput.getUserInput();
+            if(input.matches("HelloWorld")){
+                System.out.println("It matches :D");
+            }
+            else{
+                System.out.println("It does not match :(");
+            }
         }
-        else{
-            System.out.println("It does not match :(");
-        }
-        
+
     }
-    
+
 }
