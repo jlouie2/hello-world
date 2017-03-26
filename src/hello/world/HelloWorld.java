@@ -17,7 +17,7 @@ public class HelloWorld {
     public static void main(String[] args) {
 
         String input = "";
-        while(input != "end") {
+        while (!input.matches("end")) {
             input = UserInput.getUserInput();
             if(input.matches("HelloWorld")){
                 System.out.println("It matches :D");
