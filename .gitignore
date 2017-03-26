@@ -3,3 +3,4 @@
 
 # unignore java files
 !*.java
+!*/
